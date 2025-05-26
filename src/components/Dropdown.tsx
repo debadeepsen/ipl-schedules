@@ -41,7 +41,7 @@ const Dropdown: React.FC<CustomDropdownProps> = ({
   return (
     <div className='relative w-64' ref={dropdownRef}>
       <button
-        className='w-full px-4 py-2 border rounded text-left bg-[var(--background)] text-[var(--foreground)]'
+        className='w-full px-4 py-2 border border-gray-500/30 rounded text-left bg-[var(--background)] text-[var(--foreground)]'
         onClick={() => setIsOpen(prev => !prev)}
       >
         {selected?.label || placeholder}
